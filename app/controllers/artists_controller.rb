@@ -8,7 +8,7 @@ class ArtistsController < ApplicationController
 	end
 
 	def show
-		byebug
+		@artist = Artist.find(params[:id])
 	end
 
 	def create

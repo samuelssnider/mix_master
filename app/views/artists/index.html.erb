@@ -1,9 +1,5 @@
 <h1>Artists:</h1>
-<%= link_to "New artist", new_artist_path %>
-<p>
+<%= link_to "New artist", new_artist_path %> <br/> <br/>
 	<% @artists.each do |artist| %>
-
-
+		<%= artist.name %> </br> <%= image_tag artist.image_path %> </br>
 	<% end %>
-
-</p>
